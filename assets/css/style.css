@@ -335,7 +335,6 @@ section {
 
 @media (max-width: 575px) {
   .section-title h2 {
-    font-size: 28px;
     margin-bottom: 15px;
   }
   .section-title span {
@@ -480,13 +479,10 @@ section {
   color: #82909c;
 }
 
-.about .image {
-  background: url("../img/prof_pic.jpg") center center no-repeat;
-  background-size: cover;
+.about .prof_pic {
   border-radius: 2em;
-  min-height: 500px;
+  max-width:100%;
 }
-
 
 
 /*--------------------------------------------------------------
