@@ -68,12 +68,12 @@
                     <ul>
                       <li><i class="bi bi-chevron-right"></i> <strong>Name:</strong> <span>Andrew Albright</span></li>
                       <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>714 932 1899</span></li>
-                      <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong><span>Orange, California, USA</span></li>
+                      <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong><span>Irvine, California, USA</span></li>
                     </ul>
                   </div>
                   <div class="col-lg-6">
                     <ul>
-                      <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>29</span></li>
+                      <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span id="my_age">29</span></li>
                       <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>andrewalbright1@gmail.com</span></li>
                       <li><i class="bi bi-chevron-right"></i> <strong>Coffee:</strong> <span>Always</span></li>
                     </ul>
@@ -113,7 +113,7 @@
       </div>
       <div class="row">
         <div class="col-lg-12">
-          <p class="text-center">© 2021 by Andrew Albright.</p>
+          <p class="text-center">© 2022 by Andrew Albright.</p>
         </div>
 
       </div>
@@ -130,6 +130,14 @@
     <script src="assets/vendor/purecounter/purecounter.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script>
+    function calculate_age() { 
+    var dob = new Date("1991-11-18");
+    var diff_ms = Date.now() - dob.getTime();
+    var age_dt = new Date(diff_ms); 
+    document.getElementById("my_age").innerHTML = Math.abs(age_dt.getUTCFullYear() - 1970);
+}
+    </script>
 
     <!-- Template Main JS File -->
 
